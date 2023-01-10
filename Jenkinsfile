@@ -24,7 +24,7 @@ pipeline {
                 sh 'terraform apply --auto-approve'
             }
         }
-    }
+    
 
         stage('Create ECR Repo') {
             steps {
@@ -106,6 +106,8 @@ pipeline {
                 """
             }
         }
+
+    }
 
 
     post {
